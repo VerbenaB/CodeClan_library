@@ -33,26 +33,25 @@ while option != "q":
         print(book)
 
     if option == "2":
-        print("Searching for a book by title...")
+        print("Searching for a book by title")
         # TODO - Search for a book by title
         title_search = input("Search for your book: ")
         for book in library["books"]:
             if title_search == book["title"]:
-                print(f"The title is {book['title']} by {book['author']}" 
+                print(f"The title is {book['title']} by {book['author']}")
+                break
+        else:
+            print("The book is not in our library")
 
-               # else:
-    #     print("We are sorry but the book is not in our library")
-
-    if option == "3":
-        print("Adding a book...")
-        # TODO - Add a book
-        book_add = input("The title of the book you want to add: ")
+#   if option == "3":
+#       print("Adding a book...")
+#       TODO - Add a book
 
 
-    if option == "4":
-        print("Removing a book...")
-        # TODO - Remove a book
+#   if option == "4":
+#       print("Removing a book...")
+#     # TODO - Remove a book
 
-    if option == "5":
-        print("Updating a book...")
-        # TODO - Update a book
+#   if option == "5":
+#       print("Updating a book...")
+#     # TODO - Update a book
